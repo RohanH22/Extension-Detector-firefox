@@ -1,5 +1,5 @@
 function sendMessageToContentScript(extensions) {
-  // Create a message object with the extensions list
+  
   var message = {
     extensions: extensions
   };
