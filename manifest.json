@@ -9,7 +9,7 @@
       "persistent": false
     },
     "content_scripts": [{
-      "matches": ["https://im.piruby.com/", "https://industrymitra.piruby.com/", "https://ipreneur.piruby.com/", "https://innosential.industry-mitra.com/"],
+      "matches": ["<all_urls>"],
       "js": ["/content_scripts.js"]
     }],
     "browser_action": {
