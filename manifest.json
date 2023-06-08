@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Extension-Detector-firefox",
+    "version": "1.0",
+    "description": "Gather information about installed extensions",
+    "permissions": ["management", "tabs"],
+    "background": {
+      "scripts": ["/background.js"],
+      "persistent": false
+    },
+    "content_scripts": [{
+      "matches": ["https://im.piruby.com/", "https://industrymitra.piruby.com/", "https://ipreneur.piruby.com/", "https://innosential.industry-mitra.com/"],
+      "js": ["/content_scripts.js"]
+    }],
+    "browser_action": {
+      "default_popup": "/popup.html",
+      "default_icon": "/icons/search.png"
+    },
+    "icons": {
+      "48": "/icons/search.png"
+    }
+  }
+  
